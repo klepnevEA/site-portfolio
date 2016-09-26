@@ -1,0 +1,138 @@
+.left-content {
+	float:left;
+	width: 35%;
+}
+
+.right-content {
+	float:right;
+	width: 65%;
+}
+
+.left-content div {
+	margin:0 auto;
+	width:87%;
+}
+
+.left-content img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.right-content li {
+	text-align: right;
+}
+
+.career-block {
+	position: relative;
+	margin-bottom: 18px;	
+}
+
+.career-text {
+	display: inline-block;
+	text-align: left;
+	margin: 0px 10px;
+	padding: 14px 18px;
+	width: 80.4%;
+	color: #414141;
+	position: relative;
+	background: #fff;
+	border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);  
+	-webkit-transition: all .3s; 
+	-moz-transition: all .3s;      
+	transition: all .3s; 	  
+}
+
+.career-block:hover>.career-text{
+	background: #33c1e3;	
+	color: #fff;	
+}
+
+.career-block:hover .career-year {
+	color: #33c1e3;	
+	font-weight: bold;
+}
+
+.career-text h6 {
+	font-size: 23px;
+}
+
+.career-text p {
+	font-size: 20px;	
+}
+
+.career-text p,
+.career-text h6 {
+	font-family: 'FiraSans-Regular';		
+	padding: 0;
+	margin: 0;
+	line-height: 1.3em;
+}
+
+.career-year {
+	width: 20%;
+	position: absolute;
+	top: 42%;
+	right: 100%;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;		
+}
+
+.career-year span {
+	position: absolute;
+	right: 47%;
+}
+
+.career-year::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #33c1e3;
+    border: 3px solid #f6f6f6;
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    z-index:100;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}	    	
+
+
+.career-block:hover .career-year:after {
+    border-color: #93DEF2;
+}
+
+.career-block:before {
+    top: 0;
+    bottom: 50%;
+}
+
+.career-block:after {
+    bottom: -22px;
+    top: 50%;
+}
+
+.career-block:after, .career-block:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    background: #dddddd;
+    left: 62.2px;
+}
+
+.right-content li:last-child .career-block:after {
+	opacity: 0;
+}
+
+.right-content li:first-child .career-block:before {
+	opacity: 0;
+}

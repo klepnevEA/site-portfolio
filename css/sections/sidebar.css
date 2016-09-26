@@ -1,0 +1,38 @@
+.aside {
+    float:left;
+    width: 23.7%;
+    padding-top: 6px;
+}
+
+.aside li a {
+    color: #414141;
+    font-family: 'FiraSans-Bold';
+    font-size: 18px;
+    padding-right: 24px;
+    line-height: 42px;
+    -webkit-transition: all .3s; 
+    -o-transition: all .3s;      
+    transition: all .3s;
+}
+
+.aside li.active a,
+.aside li:hover a {
+    color: #33c1e3;
+}
+
+.aside ul {
+    margin:0;
+    padding:0;
+}
+
+.aside li {
+    text-align: right;
+    height: 45px;
+    border-right: 6px solid transparent;       
+}
+
+.aside li.active { 
+    border-right: 6px solid #33c1e3;
+}
+
+
