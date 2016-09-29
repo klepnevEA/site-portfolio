@@ -5,13 +5,15 @@
 	<meta name="description" content="Мой мега крутой сайт" /> 
 	<meta name="Keywords" content="HTML CSS" /> 
 	<meta name="author" content="Евгений Клепнев" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width" />
 	<title>Сайт-портфолио</title>
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/layout/font-awesome.min.css">	
+<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="css/layout/normalize.css">
+	<link rel="stylesheet" href="css/layout/font-awesome.min.css">	
 	<link rel="stylesheet" href="css/layout/fonts.css">
 	<link rel="stylesheet" href="css/layout/adjustment.css">
+
 	<link rel="stylesheet" href="css/sections/about.css">
 	<link rel="stylesheet" href="css/sections/career.css">
 	<link rel="stylesheet" href="css/sections/content.css">
@@ -23,7 +25,10 @@
 </head>
 
 <body>
-	<div class="wrapper">
+	<!--[if lte IE 9]>
+		<p class="browsehappy">Ваш браузер - старый дряхлый динозавр. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его</p>
+	<![endif]-->
+	<div class="wrapper clearfix">
 
 		<!--шапка-->
 		<header class="header">
@@ -59,9 +64,9 @@
 				<aside class="aside">
 					<nav>
 						<ul>
-							<li class="active"><a href="index.htm"><i class="fa fa-user-secret"> </i> Обо мне</a></li>
-							<li><a href="career.htm"><i class="fa fa-rocket"> </i> Карьерный путь</a></li>
-							<li><a href="#"><i class="fa fa-briefcase"> </i> Портфолио</a></li>
+							<li class="active"><a href="index.html"><i class="fa fa-user"> </i> Обо мне</a></li>
+							<li><a href="career.html"><i class="fa fa-rocket"> </i> Карьерный путь</a></li>
+							<li><a href="portfolio.html"><i class="fa fa-briefcase"> </i> Портфолио</a></li>
 						</ul>
 					</nav>
 				</aside>
@@ -91,11 +96,12 @@
 				</main>
 			</div>
 		</section>
+		
 	</div>
 
 	<!--Подвал-->
 	<footer class="footer">
-		<div class="container clearfix">
+		<div class="container">
 			<div class="footer-left">
 				<div>&copy; Дизайн сайта был разработан в школе LoftSchool</div>
 			</div>
