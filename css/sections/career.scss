@@ -1,0 +1,128 @@
+.photo-content {
+	float:left;
+	width: 35%;
+
+	div {
+    margin: 0 auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+	}
+	
+}
+
+.list-content {
+	float:left;
+	width: 65%;
+
+	li {
+		text-align: right;
+
+	&:last-child .career-block:after,
+	&:first-child .career-block:before {opacity: 0;}		
+	}	
+}
+
+
+.career-block {
+	position: relative;
+	margin-bottom: 18px;
+
+	&:hover .career-text{
+		background: $color_blue;	
+		color: $color_white;	
+	}	
+
+	&:hover .career-year {
+		color: $color_blue;	
+		font-weight: bold;
+	}
+
+	&:hover .career-year:after {border-color: $color_blue;}
+
+	&:before {
+	    content: "";
+	    display: block;
+	    position: absolute;
+	    width: 1px;
+	    background: #dedede;
+	    left: 62.2px;		
+	    top: 0;
+	    bottom: 50%;
+	}
+
+	&:after {
+		content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    background: #dedede;
+    left: 62.2px;			
+	  bottom: -22px;
+	  top: 50%;
+	}	
+
+
+}
+
+.career-text {
+	display: inline-block;
+	text-align: left;
+	margin: 0px 10px;
+	padding: 14px 18px;
+	width: 80.4%;
+	color: $color_grey;
+	position: relative;
+	background: #fff;
+	border-radius: 9px;
+	@include box_shadow(0 1px 3px rgba(0, 0, 0, 0.2)); 
+	transition: all .3s; 
+	@include fira('regular');
+
+	h6 {
+		font-size: 23px;
+		padding: 0;
+		margin: 0;
+		line-height: 1.3em;
+	}	
+
+	p {
+		padding: 0;
+		margin: 0;
+		line-height: 1.3em;		
+		font-size: 20px;
+	}  
+}
+
+
+.career-year {
+	width: 20%;
+	position: absolute;
+	top: 42%;
+	right: 100%;
+	transition: all .3s;
+
+	span {
+		position: absolute;
+		right: 47%;
+	}	
+
+	&::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: $color_blue;
+    border: 3px solid $color_white;
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    z-index:100;
+    transition: all .3s;
+	}	 
+}
+
+
+

@@ -1,0 +1,29 @@
+.aside {
+    float:left;
+    width: 23.7%;
+    padding-top: 6px;
+
+    a {
+        color: $color_grey;
+        @include fira('bold');
+        font-size: 18px;
+        padding-right: 24px;
+        line-height: 42px;
+        transition: all .3s;
+    }    
+}
+
+.aside li {
+    text-align: right;
+    height: 45px;
+    border-right: 6px solid transparent;  
+
+    &.active {
+        border-right: 6px solid $color_blue;
+        
+        a {color: $color_blue;}
+    }  
+
+    &:hover a {color: $color_blue;}       
+}
+

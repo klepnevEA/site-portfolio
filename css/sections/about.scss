@@ -1,0 +1,50 @@
+.about-me {
+	width: 100%;
+}
+
+.my-photo {
+	float:left;	
+	width: 46%;
+}
+
+.my-photo-box {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 50%;
+    overflow: hidden;	
+    border: 3px solid $color_white;    	
+}
+
+
+.my-info {
+	float:right;
+	width: 54%;
+
+}
+
+.text-info {
+	overflow-y: auto;
+	height: 330px;
+}	
+
+
+.download-resume {
+    float: right;	
+    margin: 60px 12px 0 0;
+    padding: 7px 13px; 
+    display: inline-block;
+    transition: all .3s;        
+		@include fira('bold');		
+    color: $color_red;
+    border: 2px solid $color_red;
+    border-radius: 30px;
+
+	&:hover {
+		background-color: $color_red;
+		color: #fff;
+	}     
+ 
+}
+

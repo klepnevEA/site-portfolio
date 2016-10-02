@@ -8,19 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Сайт-портфолио</title>
-<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
-	<link rel="stylesheet" href="css/layout/normalize.css">
-	<link rel="stylesheet" href="css/layout/font-awesome.min.css">	
-	<link rel="stylesheet" href="css/layout/fonts.css">
-	<link rel="stylesheet" href="css/layout/adjustment.css">
-
-	<link rel="stylesheet" href="css/sections/about.css">
-	<link rel="stylesheet" href="css/sections/career.css">
-	<link rel="stylesheet" href="css/sections/content.css">
-	<link rel="stylesheet" href="css/sections/footer.css">
-	<link rel="stylesheet" href="css/sections/header.css">
-	<link rel="stylesheet" href="css/sections/portfolio.css">
-	<link rel="stylesheet" href="css/sections/sidebar.css">
+	<link rel="stylesheet" href="css/main.css">	
 
 </head>
 
@@ -29,7 +17,7 @@
 		<p class="browsehappy">Ваш браузер - старый дряхлый динозавр. Пожалуйста <a href="http://browsehappy.com/">обновите</a> его</p>
 	<![endif]-->
 
-	<div class="wrapper clearfix">
+	<div class="wrapper">
 
 		<!--шапка-->
 		<header class="header">
@@ -37,14 +25,14 @@
 				<div class="user-header-info">
 					<div>
 						<div class="user-photo">
-							<img  width="60" height="60" src="img/content/photo/avatar_60x60.jpg" alt="мое чернобелое фото">
+							<img src="img/content/photo/avatar_60x60.jpg" alt="мое чернобелое фото">
 						</div>
 						<div  class="user-name">Евгений Клепнев</div>
 					</div>
 				</div>
 				<div class="contacts-header">
 					<div class="contacts-info">
-						<a href="#">Мои контакты</a>
+						<a class="contacts-info-link" href="#">Мои контакты</a>
 						<div class="contacts-dropdown">
 						<div class="triangle"></div> 		
 							<ul>
@@ -65,9 +53,9 @@
 				<aside class="aside">
 					<nav>
 						<ul>
-							<li><a href="index.html"><i class="fa fa-user"> </i> Обо мне</a></li>
-							<li class="active"><a href="career.html"><i class="fa fa-rocket"> </i> Карьерный путь</a></li>
-							<li><a href="portfolio.html"><i class="fa fa-briefcase"> </i> Портфолио</a></li>
+							<li><a href="index.htm"><i class="fa fa-user"> </i> Обо мне</a></li>
+							<li class="active"><a href="career.htm"><i class="fa fa-rocket"> </i> Карьерный путь</a></li>
+							<li><a href="portfolio.htm"><i class="fa fa-briefcase"> </i> Портфолио</a></li>
 						</ul>
 					</nav>
 				</aside>
@@ -76,13 +64,12 @@
 				<main class="main">
 					<h2 class="title-content">Карьерный путь</h2>
 					<div>
-						<div class="left-content">
+						<div class="photo-content">
 							<div>
 								<img src="img/content/photo/03_career_03.jpg" alt="фото">
 							</div>
-
 						</div>
-						<div class="right-content">
+						<div class="list-content">
 							<ul>
 								<li>
 									<div class="career-block">
@@ -106,7 +93,6 @@
 								</li>
 								<li>
 									<div class="career-block">
-										
 										<div class="career-text">
 											<h6>Звезда смерти</h6>
 											<p>Уборщик</p>

@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'FiraSans-Regular', sans-serif;
+    @include fira(); 
     font-size: 16px;
     line-height: 1.4;
     font-weight: normal;
@@ -12,66 +12,51 @@ body {
     height: 100%;
     width: 100%;   
     background: #f6f6f6; 
-
 }
 
 * {
+    margin: 0;
+    padding: 0;    
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
-    font-family: 'FiraSans-Bold';   
     padding:0;
-    margin:0;
+    margin:0;    
+    @include fira('bold');     
     font-size: 35px;
 }
 
 h2 {
-    font-family: 'FiraSans-Bold';   
+    margin:3px 17px 14px 16px;    
+    @include fira('bold');     
     padding:0;
-    margin:3px 17px 14px 16px;
     font-size: 35px;
 }
 
-a {
-    text-decoration: none;
-}
+a { text-decoration: none;}
 
 ul {
     padding: 0;
     margin: 0;
 }
 
-ul li {
-    list-style: none;
-}
+ul li { list-style: none;}
+
 
 .wrapper {
+    position: relative;    
+    padding-bottom: 56px;
     min-height: 100%;
     min-width: 960px;
     overflow: hidden;
-    padding-bottom: 56px;
-    position: relative;
-
+    @extend %clearfix;
 }
 
-.wrapper::after {
-    content: "";
-    display: block;
-}
 
-.clearfix:before,
-.clearfix:after {
-   content: "";
-   width: 100%;
-   clear: both;
-   display: block;
-}
 
 .container {
     width: 76%;
@@ -86,12 +71,12 @@ ul li {
 }
 
 
-.browsehappy {
+.browsehappy { 
     text-align:center;
-}
 
-.browsehappy a {
-    font-weight: bold;
-    text-decoration: underline;
+    a {
+        font-weight: bold;
+        text-decoration: underline;        
+    }
 }
 

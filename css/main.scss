@@ -1,0 +1,22 @@
+$color_black: #727272;
+$color_grey: #414141;
+$color_white: #f6f6f6;
+$color_blue: #33c1e3;
+$color_red: #e85f61;
+
+
+//adjustment
+@import "layout/fonts.scss";
+@import "layout/mixins.scss";
+@import "layout/normalize.scss";
+@import "layout/adjustment.scss";
+@import "layout/font-awesome.scss";
+  
+//sections
+@import "sections/header.scss";
+@import "sections/footer.scss";
+@import "sections/about.scss";
+@import "sections/career.scss";
+@import "sections/content.scss";
+@import "sections/portfolio.scss";
+@import "sections/sidebar.scss";

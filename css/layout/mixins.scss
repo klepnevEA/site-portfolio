@@ -1,0 +1,26 @@
+%clearfix {
+    &::after,
+    &::before {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin fira($style: 'regilar') {
+	@if $style == 'regular' {
+		font-family: 'FiraSans-Regular';
+	} @else if $style == 'bold'{
+		font-family: 'FiraSans-Bold';
+	} @else if $style == 'medium'{
+		font-family: 'FiraSans-Medium';
+	} @else if $style == 'light'{
+		font-family: 'FiraSans-Light';
+	}
+}
+
+ @mixin box_shadow($shadow) {
+ 		-webkit-box-shadow: $shadow;
+		-moz-box-shadow: $shadow; 	
+ 		box-shadow: $shadow;	
+ }
