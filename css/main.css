@@ -30,12 +30,15 @@
   font-style: normal;
 }
 
-.wrapper::after, .wrapper::before {
+.wrapper::after, .footer::after, .wrapper::before, .footer::before {
   content: '';
   display: block;
   clear: both;
 }
 
+/*@include border_radius();*/
+/*@include transition();*/
+/*@include transform();*/
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -491,24 +494,26 @@ ul li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+}
+
 .wrapper {
   position: relative;
   padding-bottom: 56px;
   min-height: 100%;
-  min-width: 960px;
   overflow: hidden;
 }
 
 .container {
-  width: 76%;
+  max-width: 960px;
+  width: 95%;
   margin: 0 auto;
-  min-width: 940px;
-  max-width: 1200px;
 }
 
 .main {
   float: left;
-  width: 76%;
+  width: 78%;
 }
 
 .browsehappy {
@@ -3310,7 +3315,7 @@ ul li {
 .user-name {
   display: inline-block;
   vertical-align: middle;
-  width: 77%;
+  width: 57%;
   font-size: 18px;
   margin-top: 10px;
   margin-left: 7px;
@@ -3379,8 +3384,8 @@ ul li {
   top: -10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   height: 10px;
   width: 20px;
 }
@@ -3395,9 +3400,9 @@ ul li {
   top: 0px;
   position: absolute;
   left: 0;
-  -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .triangle::before {
@@ -3419,7 +3424,7 @@ ul li {
   margin-top: 12px;
   background: #fff;
   border: 1px solid #dedede;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
   visibility: hidden;
   opacity: 0;
 }
@@ -3441,7 +3446,6 @@ ul li {
 
 .footer {
   background-color: #414141;
-  height: 50px;
   padding: 13px 0;
   margin-top: -50px;
   position: relative;
@@ -3451,13 +3455,14 @@ ul li {
 .footer-left {
   position: relative;
   float: left;
-  width: 50%;
+  width: 70%;
+  line-height: 2.3em;
 }
 
 .footer-right {
   position: relative;
   float: right;
-  width: 50%;
+  width: 30%;
   text-align: right;
   padding-right: 8px;
 }
@@ -3529,8 +3534,9 @@ ul li {
 }
 
 .my-info {
-  float: right;
+  float: left;
   width: 54%;
+  text-align: justify;
 }
 
 .text-info {
@@ -3538,12 +3544,15 @@ ul li {
   height: 330px;
 }
 
+.wrapper__download-resume {
+  text-align: right;
+}
+
 .download-resume {
-  float: right;
   margin: 60px 12px 0 0;
   padding: 7px 13px;
   display: inline-block;
-  transition: all .3s;
+  transition: all 0.3s;
   font-family: 'FiraSans-Bold';
   color: #e85f61;
   border: 2px solid #e85f61;
@@ -3558,6 +3567,7 @@ ul li {
 .photo-content {
   float: left;
   width: 35%;
+  margin-bottom: 20px;
 }
 
 .photo-content div {
@@ -3599,6 +3609,7 @@ ul li {
 
 .career-block:hover .career-year:after {
   border-color: #33c1e3;
+  border: 3px solid #baeaf5;
 }
 
 .career-block:before {
@@ -3677,7 +3688,7 @@ ul li {
   top: 3px;
   right: 12px;
   z-index: 100;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .portfolio-list li {
@@ -3693,14 +3704,7 @@ ul li {
   transition: all 1s;
 }
 
-.portfolio-list li:hover {
-  -webkit-transform: scale(1.1, 1.1);
-      -ms-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  box-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-list:hover h3 {
+.portfolio-list li:hover h3 {
   color: #e85f61;
 }
 
@@ -3736,9 +3740,13 @@ ul li {
   color: #414141;
 }
 
+.nav {
+  display: inline-block;
+  margin: 0 auto;
+}
+
 .aside {
   float: left;
-  width: 23.7%;
   padding-top: 6px;
 }
 
@@ -3748,7 +3756,7 @@ ul li {
   font-size: 18px;
   padding-right: 24px;
   line-height: 42px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .aside li {
@@ -3767,6 +3775,102 @@ ul li {
 
 .aside li:hover a {
   color: #33c1e3;
+}
+
+@media print {
+  .head, .side, .nav, .footer {
+    display: none;
+  }
+  .content {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aside {
+    clear: both;
+    width: 21.7%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aside {
+    clear: both;
+    width: 100%;
+    text-align: center;
+  }
+  .aside li {
+    display: inline-block;
+    float: left;
+    border-right: 0px;
+  }
+  .aside li.active {
+    border-right: 0px;
+  }
+  .main {
+    width: 100%;
+  }
+  .my-photo {
+    width: 32%;
+  }
+  .my-info {
+    width: 68%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+  .my-photo {
+    clear: both;
+    width: 100%;
+  }
+  .my-info {
+    width: 100%;
+  }
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    clear: both;
+    text-align: center;
+  }
+  .wrapper__download-resume {
+    text-align: center;
+  }
+  .download-resume {
+    margin: 0px 12px 20px 0;
+  }
+  .text-info {
+    height: 278px;
+    margin: 0px 0px 20px 0;
+  }
+  /*career*/
+  .career-year,
+  .career-block::after,
+  .career-block::before {
+    display: none;
+  }
+  .photo-content,
+  .list-content {
+    width: 100%;
+  }
+  .career-block {
+    text-align: center;
+  }
+  /*portfolio*/
+  .portfolio-wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+  .nav i {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -24,3 +24,28 @@
 		-moz-box-shadow: $shadow; 	
  		box-shadow: $shadow;	
  }
+
+ @mixin border_radius($radius) {
+ 		-webkit-border-radius: $radius;
+		-moz-border-radius: $radius; 	
+ 		border-radius: $radius;	
+ } 
+
+ @mixin transition($transition) {
+ 		-webkit-transition: $transition;
+		-moz-transition: $transition; 	
+ 		transition: $transition;	
+ } 
+
+ @mixin transform($transform) {
+ 		-webkit-transform: $transform;
+		-moz-transform: $transform; 
+		-ms-transform: $transform;
+		-o-transform: $transform;					
+ 		transform: $transform;	
+ }  
+
+
+ /*@include border_radius();*/
+ /*@include transition();*/
+ /*@include transform();*/

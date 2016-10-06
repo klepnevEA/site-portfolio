@@ -1,6 +1,10 @@
+.nav {
+    display: inline-block;
+    margin: 0 auto;    
+}
+
 .aside {
     float:left;
-    width: 23.7%;
     padding-top: 6px;
 
     a {
@@ -9,9 +13,10 @@
         font-size: 18px;
         padding-right: 24px;
         line-height: 42px;
-        transition: all .3s;
+  			@include transition(all .3s);  
     }    
 }
+
 
 .aside li {
     text-align: right;

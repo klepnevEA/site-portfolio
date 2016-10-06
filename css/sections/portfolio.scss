@@ -5,22 +5,18 @@
         vertical-align: top;
         width: 219px;
         min-height: 278px;
-        border-radius: 10px;
+				@include border_radius(10px);
         background-color: #fff;
         @include box_shadow(0 1px 3px rgba(0, 0, 0, 0.2));    
         margin: 0px 0px 10px 17px;
         overflow: hidden;
-        transition: all 1s;
+  			@include transition(all 1s);          
 
-        &:hover {
-            transform: scale(1.1, 1.1);
-            @include box_shadow(10px 10px 3px rgba(0, 0, 0, 0.2));            
-        }
-       
+		    &:hover {
+		        h3 {color: $color_red;}  
+		    }    
     }
-    &:hover {
-        h3 {color: $color_red;}  
-    }
+
 }
 
 .portfolio-photo {
@@ -30,7 +26,7 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center center;
-    transition: all 1s;
+  @include transition(all 1s);  
 
     &:hover {
         background-size: 110%;       

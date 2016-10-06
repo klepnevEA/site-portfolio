@@ -19,27 +19,33 @@
 
 
 .my-info {
-	float:right;
+	float:left;
 	width: 54%;
-
+	text-align: justify;
 }
 
 .text-info {
 	overflow-y: auto;
 	height: 330px;
+}
+
+.wrapper__download-resume {
+    text-align:right;
 }	
 
 
 .download-resume {
-    float: right;	
+   
     margin: 60px 12px 0 0;
     padding: 7px 13px; 
     display: inline-block;
-    transition: all .3s;        
-		@include fira('bold');		
+    @include transition(all .3s);       
+	@include fira('bold');		
     color: $color_red;
     border: 2px solid $color_red;
-    border-radius: 30px;
+    @include border_radius(30px);
+
+   
 
 	&:hover {
 		background-color: $color_red;

@@ -46,12 +46,13 @@ ul {
 
 ul li { list-style: none;}
 
+img {width: 100%;}
+
 
 .wrapper {
     position: relative;    
     padding-bottom: 56px;
     min-height: 100%;
-    min-width: 960px;
     overflow: hidden;
     @extend %clearfix;
 }
@@ -59,15 +60,14 @@ ul li { list-style: none;}
 
 
 .container {
-    width: 76%;
+    max-width:960px;
+    width: 95%;
     margin: 0 auto;
-    min-width: 940px;
-    max-width: 1200px;
 }
 
 .main {
     float:left;
-    width: 76%;    
+    width: 78%;    
 }
 
 
