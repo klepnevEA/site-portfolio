@@ -465,6 +465,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h1 {
@@ -513,7 +514,7 @@ img {
 
 .main {
   float: left;
-  width: 78%;
+  width: 76%;
 }
 
 .browsehappy {
@@ -523,6 +524,15 @@ img {
 .browsehappy a {
   font-weight: bold;
   text-decoration: underline;
+}
+
+.title-content {
+  padding: 0;
+  margin: 0;
+  font-family: 'FiraSans-Bold';
+  font-size: 35px;
+  margin-bottom: 19px;
+  padding: 2px 0px 0px 19px;
 }
 
 @font-face {
@@ -3317,24 +3327,25 @@ img {
   vertical-align: middle;
   width: 57%;
   font-size: 18px;
-  margin-top: 10px;
-  margin-left: 7px;
+  margin-top: 15px;
+  margin-left: 14px;
 }
 
 .contacts-header {
   height: 100%;
   width: 50%;
   float: left;
-  display: table;
+  text-align: right;
 }
 
 .contacts-info {
+  display: inline-block;
   height: 100%;
-  float: right;
   width: 128px;
   margin-right: 2%;
-  padding-top: 28.1px;
+  padding-top: 30.1px;
   position: relative;
+  z-index: 9000;
 }
 
 .contacts-info:after {
@@ -3446,8 +3457,8 @@ img {
 
 .footer {
   background-color: #414141;
-  padding: 13px 0;
-  margin-top: -50px;
+  padding: 9.1px 0;
+  margin-top: -41px;
   position: relative;
   color: #fff;
 }
@@ -3520,14 +3531,14 @@ img {
 
 .my-photo {
   float: left;
-  width: 46%;
+  width: 46.4%;
 }
 
 .my-photo-box {
-  width: 220px;
-  height: 220px;
+  width: 228px;
+  height: 228px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 7px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #f6f6f6;
@@ -3535,7 +3546,7 @@ img {
 
 .my-info {
   float: left;
-  width: 54%;
+  width: 53.6%;
   text-align: justify;
 }
 
@@ -3550,7 +3561,7 @@ img {
 
 .download-resume {
   margin: 60px 12px 0 0;
-  padding: 7px 13px;
+  padding: 7px 11px;
   display: inline-block;
   transition: all 0.3s;
   font-family: 'FiraSans-Bold';
@@ -3673,7 +3684,8 @@ img {
 
 .career-year span {
   position: absolute;
-  right: 47%;
+  right: 43.9%;
+  font-size: 0.9rem;
 }
 
 .career-year::after {
@@ -3685,13 +3697,14 @@ img {
   background: #33c1e3;
   border: 3px solid #f6f6f6;
   position: absolute;
-  top: 3px;
-  right: 12px;
+  top: 2px;
+  right: 11px;
   z-index: 100;
   transition: all 0.3s;
 }
 
 .portfolio-list li {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 219px;
@@ -3704,22 +3717,83 @@ img {
   transition: all 1s;
 }
 
+.portfolio-list li:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+
 .portfolio-list li:hover h3 {
   color: #e85f61;
 }
 
+.portfolio-list li:hover .portfolio-photo {
+  background-size: 130%;
+}
+
+.portfolio-list li:hover .portfolio-photo:after {
+  top: 200px;
+  left: 0;
+}
+
 .portfolio-photo {
+  position: relative;
   width: 100%;
   height: 172px;
-  background-image: url(../img/content/banner/banner_01.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  background-size: 101%;
   background-position: center center;
+  background-repeat: no-repeat;
   transition: all 1s;
 }
 
-.portfolio-photo:hover {
-  background-size: 110%;
+.portfolio-photo:after {
+  content: "";
+  position: absolute;
+  z-index: 2000;
+  width: 300%;
+  top: -166px;
+  left: -185px;
+  height: 20px;
+  background-color: rgba(254, 254, 254, 0.1);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  transition: all 1s;
+}
+
+.portfolio-photo:before {
+  content: "";
+  position: absolute;
+  z-index: 2000;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.5) inset;
+  transition: all 1s;
+}
+
+.portfolio-photo_01 {
+  background-image: url("../img/content/banner/banner_01.jpg");
+}
+
+.portfolio-photo_02 {
+  background-image: url("../img/content/banner/banner_02.jpg");
+}
+
+.portfolio-photo_03 {
+  background-image: url("../img/content/banner/banner_03.jpg");
+}
+
+.portfolio-photo_04 {
+  background-image: url("../img/content/banner/banner_04.jpg");
+}
+
+.portfolio-photo_05 {
+  background-image: url("../img/content/banner/banner_05.jpg");
 }
 
 .portfolio-description {
@@ -3743,6 +3817,7 @@ img {
 .nav {
   display: inline-block;
   margin: 0 auto;
+  width: 100%;
 }
 
 .aside {
@@ -3750,31 +3825,36 @@ img {
   padding-top: 6px;
 }
 
-.aside a {
+.nav__list_li_link {
   color: #414141;
   font-family: 'FiraSans-Bold';
   font-size: 18px;
   padding-right: 24px;
-  line-height: 42px;
+  line-height: 47px;
   transition: all 0.3s;
+  display: block;
 }
 
-.aside li {
+.nav__list_li {
   text-align: right;
   height: 45px;
   border-right: 6px solid transparent;
 }
 
-.aside li.active {
+.nav__list_li.active {
   border-right: 6px solid #33c1e3;
 }
 
-.aside li.active a {
+.nav__list_li.active a {
   color: #33c1e3;
 }
 
-.aside li:hover a {
+.nav__list_li:hover a {
   color: #33c1e3;
+}
+
+.fa {
+  margin-right: 5px;
 }
 
 @media print {
@@ -3789,7 +3869,7 @@ img {
 @media screen and (min-width: 1200px) {
   .aside {
     clear: both;
-    width: 21.7%;
+    width: 23.9%;
   }
 }
 

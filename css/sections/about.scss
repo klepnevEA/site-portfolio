@@ -4,14 +4,14 @@
 
 .my-photo {
 	float:left;	
-	width: 46%;
+    width: 46.4%;
 }
 
 .my-photo-box {
-    width: 220px;
-    height: 220px;
+    width: 228px;
+    height: 228px;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 7px;
     border-radius: 50%;
     overflow: hidden;	
     border: 3px solid $color_white;    	
@@ -20,7 +20,7 @@
 
 .my-info {
 	float:left;
-	width: 54%;
+    width: 53.6%;
 	text-align: justify;
 }
 
@@ -37,7 +37,7 @@
 .download-resume {
    
     margin: 60px 12px 0 0;
-    padding: 7px 13px; 
+    padding: 7px 11px; 
     display: inline-block;
     @include transition(all .3s);       
 	@include fira('bold');		

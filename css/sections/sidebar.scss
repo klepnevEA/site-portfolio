@@ -1,24 +1,26 @@
 .nav {
     display: inline-block;
-    margin: 0 auto;    
+    margin: 0 auto;
+    width: 100%;        
 }
 
 .aside {
     float:left;
     padding-top: 6px;
-
-    a {
-        color: $color_grey;
-        @include fira('bold');
-        font-size: 18px;
-        padding-right: 24px;
-        line-height: 42px;
-  			@include transition(all .3s);  
-    }    
 }
 
+.nav__list_li_link {
+    color: $color_grey;
+    @include fira('bold');
+    font-size: 18px;
+    padding-right: 24px;
+    line-height: 47px;
+    @include transition(all .3s); 
+    display: block; 
+} 
 
-.aside li {
+
+.nav__list_li {
     text-align: right;
     height: 45px;
     border-right: 6px solid transparent;  
@@ -32,3 +34,6 @@
     &:hover a {color: $color_blue;}       
 }
 
+.fa {
+    margin-right: 5px;   
+}
