@@ -3898,6 +3898,7 @@ img {
 }
 
 .login__top {
+  margin-top: 79px;
   min-height: 152px;
   background-color: #FFF;
   border-radius: 10px 10px 0 0;
@@ -3924,7 +3925,6 @@ img {
   height: 140px;
   top: 0px;
   left: 50%;
-  margin-top: -70px;
   margin-left: -70px;
   border-radius: 50%;
   background-color: #ccc;

@@ -19,7 +19,7 @@
 	width: 299px;
 	text-align: center;
 	vertical-align: middle;	
- 	@include transform(scale(0)); 	
+	@include transform(scale(0)); 	
 	@include transition(all 0.5s cubic-bezier(.17,.67,.64,1.29));
 	opacity: 0;
 }
@@ -29,6 +29,7 @@
 
 
 .login__top {
+	margin-top: 79px;	
 	min-height: 152px;
 	background-color: #FFF;
 	@include border_radius(10px 10px 0 0);	
@@ -49,20 +50,18 @@
 	overflow:hidden;		
 }
 
-
 .login__top_photo {
 	position: absolute;
 	width: 140px;
 	height: 140px;
 	top:0px;
 	left:50%;
-	margin-top:-70px;
 	margin-left:-70px;
 	@include border_radius(50%);
 	background-color: #ccc;	
 	border:2px solid #ccc;
 	overflow:hidden;
- 	@include transform(scale(0));	
+	@include transform(scale(0));	
 	@include transition(all 0.5s cubic-bezier(.17,.67,.64,1.29) 0.5s);
 }
 
@@ -72,11 +71,11 @@
 	font-size: 14px;
 	padding: 8px 13px 8px;
 	border: 2px solid #fff;
-  display: inline-block;
+	display: inline-block;
 	@include fira('bold');		
-  @include border_radius(30px);
-  overflow:hidden;
-  @include transition(all .3s);	  	
+	@include border_radius(30px);
+	overflow:hidden;
+	@include transition(all .3s);	  	
 
 	&:hover {
 		color: $color_blue;
@@ -87,12 +86,12 @@
 }
 
 .login__active {
-    opacity: 1;
- 		@include transform(scale(1)); 
+	opacity: 1;
+	@include transform(scale(1)); 
 
-		.login__top_photo {
- 			@include transform(scale(1)); 			
-		} 
- 		  
+	.login__top_photo {
+		@include transform(scale(1)); 			
+	} 
+
 }
 
