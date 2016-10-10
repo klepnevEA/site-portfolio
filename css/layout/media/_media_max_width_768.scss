@@ -1,0 +1,101 @@
+@media screen and (max-width: 768px){
+  h1 {
+    text-align: center;
+  }
+
+  .aside {
+    text-align: center;
+  }     
+
+  .contacts-info {
+    white-space: nowrap;
+    position: relative;
+    float:right;
+    background-image: url(../img/icons/phone.png);
+    background-repeat:  no-repeat;
+    background-position:  right center;
+    background-size: 32px; 
+
+    &:hover {
+        background-image: url(../img/icons/phone-hover.png);     
+    }
+  }
+
+  .contacts-info-link {
+    display: none;
+  } 
+
+  .contacts-header {
+    width: 10%;
+  }
+
+  .user-header-info {
+    width: 90%;      
+  }
+
+  .contacts-dropdown {
+    left: -95%;    
+  }
+
+  .nav__list_li_link {
+    padding-right: 10px;
+  }     
+
+  .triangle {
+    left: 92%;
+  }
+
+  .my-photo {
+    clear:both;
+    width: 100%
+  }
+
+  .my-info {
+    width: 100%;
+  } 
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+    clear: both;
+    text-align:center;
+  }
+
+  .wrapper__download-resume {
+    text-align: center;
+  }
+
+  .download-resume {
+    margin: 0px 12px 20px 0; 
+  }
+
+  .text-info {
+    height: 278px;
+    margin: 0px 0px 20px 0;    
+  }
+
+  /*career*/
+
+  .career-year,
+  .career-block::after,
+  .career-block::before {
+    display: none;
+  }
+
+  .photo-content,
+  .list-content {
+    width: 100%;
+  }
+
+  .career-block {
+    text-align: center;
+  }
+
+
+  /*portfolio*/
+  .portfolio-wrapper {
+    text-align:center;
+  }
+
+}
+

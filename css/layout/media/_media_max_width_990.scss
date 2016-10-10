@@ -1,0 +1,39 @@
+@media screen and (max-width: 990px){
+
+  .aside {
+    clear:both;
+    width: 100%;
+    text-align: left;    
+
+    li {
+      display: inline-block;
+      border-right: 0px; 
+      
+      &.active {
+        border-right: 0px;
+      } 
+
+    }    
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .my-photo {
+    width: 32%;
+  }
+
+  .my-info {
+   width: 68%;   
+ }
+
+  .contacts-dropdown {
+    left: -91%;    
+  }
+  
+
+  .triangle {
+    left: 75%;
+  } 
+}
