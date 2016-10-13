@@ -3809,6 +3809,11 @@ img {
   background-image: url("../img/content/banner/banner_05.jpg");
 }
 
+.portfolio-photo_img {
+  position: absolute;
+  top: -9000px;
+}
+
 .portfolio-description {
   padding: 17px 19px 7px;
   text-align: left;
