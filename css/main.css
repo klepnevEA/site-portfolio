@@ -531,7 +531,7 @@ img {
   margin: 0;
   font-family: 'FiraSans-Bold';
   font-size: 35px;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   padding: 2px 0px 0px 19px;
 }
 
@@ -3835,6 +3835,7 @@ img {
 .aside {
   float: left;
   padding-top: 6px;
+  width: 23.9%;
 }
 
 .nav__list_li_link {
