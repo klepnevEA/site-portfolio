@@ -83,17 +83,18 @@
 .portfolio-description {
     padding: 17px 19px 7px;
 
-    h3 {
+    .portfolio-description_title {
         color: $color_blue;
         font-weight: normal;    
     } 
 
 
-    p {
+    .portfolio-description_name,
+    .portfolio-description_type {
         color: $color_black;
         margin-bottom: 8px;
     }    
 
-    p:first-child {color: $color_grey;}      
+    .portfolio-description_name {color: $color_grey;}      
 }
 

@@ -4,11 +4,11 @@
 	margin-bottom: 20px;
 
 	div {
-    margin: 0 auto;
-    width: 220px;
-    height: 220px;
-    @include border_radius(10px);
-    overflow: hidden;
+		margin: 0 auto;
+		width: 220px;
+		height: 220px;
+		@include border_radius(10px);
+		overflow: hidden;
 	}
 	
 }
@@ -20,8 +20,8 @@
 	li {
 		text-align: right;
 
-	&:last-child .career-block:after,
-	&:first-child .career-block:before {opacity: 0;}		
+		&:last-child .career-block:after,
+		&:first-child .career-block:before {opacity: 0;}		
 	}	
 }
 
@@ -38,7 +38,7 @@
 	&:hover .career-year {
 		color: $color_blue;	
 		font-weight: bold;
-   	}	
+	}	
 
 
 
@@ -48,25 +48,25 @@
 	}
 
 	&:before {
-	    content: "";
-	    display: block;
-	    position: absolute;
-	    width: 1px;
-	    background: #dedede;
-	    left: 62.2px;		
-	    top: 0;
-	    bottom: 50%;
+		content: "";
+		display: block;
+		position: absolute;
+		width: 1px;
+		background: #dedede;
+		left: 62.2px;		
+		top: 0;
+		bottom: 50%;
 	}
 
 	&:after {
 		content: "";
-    display: block;
-    position: absolute;
-    width: 1px;
-    background: #dedede;
-    left: 62.2px;			
-	  bottom: -22px;
-	  top: 50%;
+		display: block;
+		position: absolute;
+		width: 1px;
+		background: #dedede;
+		left: 62.2px;			
+		bottom: -22px;
+		top: 50%;
 	}	
 
 
@@ -85,22 +85,22 @@
 	@include box_shadow(0 1px 3px rgba(0, 0, 0, 0.2)); 
 	transition: all .3s; 
 	@include fira('regular');
-
-	h6 {
-		font-size: 23px;
-		padding: 0;
-		margin: 0;
-		line-height: 1.3em;
-	}	
-
-	p {
-		padding: 0;
-		margin: 0;
-		line-height: 1.3em;		
-		font-size: 20px;
-	}  
 }
 
+.career-text_title {
+	font-size: 23px;
+	padding: 0;
+	margin: 0;
+	line-height: 1.3em;
+}	
+
+.career-text_job,
+.career-text_time {
+	padding: 0;
+	margin: 0;
+	line-height: 1.3em;		
+	font-size: 20px;
+} 
 
 .career-year {
 	width: 20%;
@@ -110,24 +110,24 @@
 	transition: all .3s;
 
 	span {
-    position: absolute;
-    right: 43.9%;
-    font-size: 0.9rem;
+		position: absolute;
+		right: 43.9%;
+		font-size: 0.9rem;
 	}	
 
 	&::after {
-    content: '';
-    display: block;
-    width: 10px;
-    height: 10px;
+		content: '';
+		display: block;
+		width: 10px;
+		height: 10px;
 		@include border_radius(50%);
-    background: $color_blue;
-    border: 3px solid $color_white;
-    position: absolute;
-    top: 2px;
-    right: 11px;
-    z-index:100;
-    @include transition(all .3s); 
+		background: $color_blue;
+		border: 3px solid $color_white;
+		position: absolute;
+		top: 2px;
+		right: 11px;
+		z-index:100;
+		@include transition(all .3s); 
 	}	 
 }
 

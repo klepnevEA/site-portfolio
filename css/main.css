@@ -3315,8 +3315,8 @@ img {
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
-  border: 2px solid #727272;
-  margin: 7px 0 0 7px;
+  border: 2px solid #ccc;
+  margin: 9px 0 0 9px;
   width: 63px;
   height: 63px;
   overflow: hidden;
@@ -3672,14 +3672,15 @@ img {
   font-family: 'FiraSans-Regular';
 }
 
-.career-text h6 {
+.career-text_title {
   font-size: 23px;
   padding: 0;
   margin: 0;
   line-height: 1.3em;
 }
 
-.career-text p {
+.career-text_job,
+.career-text_time {
   padding: 0;
   margin: 0;
   line-height: 1.3em;
@@ -3812,17 +3813,18 @@ img {
   padding: 17px 19px 7px;
 }
 
-.portfolio-description h3 {
+.portfolio-description .portfolio-description_title {
   color: #33c1e3;
   font-weight: normal;
 }
 
-.portfolio-description p {
+.portfolio-description .portfolio-description_name,
+.portfolio-description .portfolio-description_type {
   color: #727272;
   margin-bottom: 8px;
 }
 
-.portfolio-description p:first-child {
+.portfolio-description .portfolio-description_name {
   color: #414141;
 }
 
