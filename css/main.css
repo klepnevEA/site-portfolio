@@ -3811,6 +3811,7 @@ img {
 
 .portfolio-description {
   padding: 17px 19px 7px;
+  text-align: left;
 }
 
 .portfolio-description .portfolio-description_title {
