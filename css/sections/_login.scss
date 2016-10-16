@@ -32,7 +32,10 @@
 	margin-top: 79px;	
 	min-height: 152px;
 	background-color: #FFF;
-	@include border_radius(10px 10px 0 0);	
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;   
+  border-radius: 10px 10px 0 0;  	
+
 }
 
 .login__top_name {
@@ -45,7 +48,9 @@
 .login__bottom {
 	height: 77px;
 	background-color: $color_blue;
-	@include border_radius(0 0 10px 10px);
+  -webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;   
+  border-radius: 0 0 10px 10px; 	
 	vertical-align:middle;
 	overflow:hidden;		
 }
@@ -57,7 +62,9 @@
 	top:0px;
 	left:50%;
 	margin-left:-70px;
-	@include border_radius(50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;   
+  border-radius: 50%;  	
 	background-color: #ccc;	
 	border:2px solid #ccc;
 	overflow:hidden;
@@ -72,8 +79,10 @@
 	padding: 8px 13px 8px;
 	border: 2px solid #fff;
 	display: inline-block;
-	@include fira('bold');		
-	@include border_radius(30px);
+	@include fira('bold');	
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;   
+  border-radius: 30px;  		
 	overflow:hidden;
 	@include transition(all .3s);	  	
 

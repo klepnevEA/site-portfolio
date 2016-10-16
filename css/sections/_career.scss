@@ -3,14 +3,16 @@
 	width: 35%;
 	margin-bottom: 20px;
 
-	div {
-		margin: 0 auto;
-		width: 220px;
-		height: 220px;
-		@include border_radius(10px);
-		overflow: hidden;
-	}
-	
+}
+
+.photo-content__wrapper {
+	margin: 0 auto;
+	width: 220px;
+	height: 220px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;        
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .list-content {
@@ -20,8 +22,8 @@
 	li {
 		text-align: right;
 
-		&:last-child .career-block:after,
-		&:first-child .career-block:before {opacity: 0;}		
+		&:last-child .career-text:after,
+		&:first-child .career-text:before {opacity: 0;}		
 	}	
 }
 
@@ -44,30 +46,10 @@
 
 	&:hover .career-year:after {
 		border-color: $color_blue;
-		border: 3px solid lighten($color_blue, 30%);	
+		border: 5px solid lighten($color_blue, 30%);	
 	}
 
-	&:before {
-		content: "";
-		display: block;
-		position: absolute;
-		width: 1px;
-		background: #dedede;
-		left: 62.2px;		
-		top: 0;
-		bottom: 50%;
-	}
 
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		width: 1px;
-		background: #dedede;
-		left: 62.2px;			
-		bottom: -22px;
-		top: 50%;
-	}	
 
 
 }
@@ -81,10 +63,38 @@
 	color: $color_grey;
 	position: relative;
 	background: #fff;
-	@include border_radius(9px);
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;        
+	border-radius: 9px;
 	@include box_shadow(0 1px 3px rgba(0, 0, 0, 0.2)); 
 	transition: all .3s; 
 	@include fira('regular');
+
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 1px;
+		background: #dedede;
+		left: -20.2px;		
+		top: 0;
+		bottom: 50%;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 1px;
+		background: #dedede;
+		left: -20.2px;			
+		bottom: -22px;
+		top: 50%;
+	}	
+
+
+
 }
 
 .career-text_title {
@@ -120,12 +130,14 @@
 		display: block;
 		width: 10px;
 		height: 10px;
-		@include border_radius(50%);
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;        
+		border-radius: 50%;
 		background: $color_blue;
-		border: 3px solid $color_white;
+		border: 5px solid $color_white;
 		position: absolute;
-		top: 2px;
-		right: 11px;
+    top: 0px;
+    right: 9.1px;
 		z-index:100;
 		@include transition(all .3s); 
 	}	 

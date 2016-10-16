@@ -12,18 +12,18 @@
 
 .nav__list_li_link {
     color: $color_grey;
-    @include fira('bold');
+    @include fira('medium');
     font-size: 18px;
     padding-right: 24px;
-    line-height: 47px;
+    line-height: 2.45em;
     @include transition(all .3s); 
     display: block; 
+    min-height: 43px;    
 } 
 
 
 .nav__list_li {
     text-align: right;
-    height: 45px;
     border-right: 6px solid transparent;  
 
     &.active {

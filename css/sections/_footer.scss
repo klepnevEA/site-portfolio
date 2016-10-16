@@ -1,10 +1,10 @@
 .footer {
 	background-color: $color_grey;
-  padding: 9.1px 0;
-  margin-top: -41px;
-  position: relative;
+	padding: 9.1px 0;
+	margin-top: -41px;
+	position: relative;
 	color: #fff;
-  @extend %clearfix;
+	@extend %clearfix;
 
 }
 
@@ -12,7 +12,7 @@
 	position: relative;	
 	float: left;
 	width: 70%;
-  line-height: 2.3em;	
+	line-height: 2.3em;	
 }
 
 .footer-right {
@@ -21,33 +21,28 @@
 	width: 30%;
 	text-align: right;
 	padding-right: 8px;
-	
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	li {
-		display: inline-block;
-		width: 31px;
-		height: 30px;
-		background-size: 100%;
-		background-repeat: no-repeat;	
-		background-image: url(../img/icons/social.png);
-		overflow:hidden;
-		margin-right: 3px;
-
-		a {
-			display: block;
-			width: 100px;
-			height: 100px;
-			text-indent: 15px;
-		}		
-	}		    
 }
 
+.social {
+	margin: 0;
+	padding: 0;
+}
 
+.social__li {
+	display: inline-block;
+	width: 31px;
+	height: 30px;
+	background-size: 100%;
+	background-repeat: no-repeat;	
+	background-image: url(../img/icons/social.png);
+	overflow:hidden;
+	margin-right: 3px;
+}	
+
+.social__li_a {
+	display: block;
+	text-indent: 15px;
+}			
 
 .footer-right .facebook {
 	background-position: 0 0;	
