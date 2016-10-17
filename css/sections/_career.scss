@@ -19,13 +19,14 @@
 	float:left;
 	width: 65%;
 
-	li {
-		text-align: right;
-
-		&:last-child .career-text:after,
-		&:first-child .career-text:before {opacity: 0;}		
-	}	
 }
+
+.list-content__li {
+	text-align: right;
+
+	&:last-child .career-text:after,
+	&:first-child .career-text:before {opacity: 0;}		
+}	
 
 
 .career-block {
@@ -136,8 +137,8 @@
 		background: $color_blue;
 		border: 5px solid $color_white;
 		position: absolute;
-    top: 0px;
-    right: 9.1px;
+		top: 0px;
+		right: 9.1px;
 		z-index:100;
 		@include transition(all .3s); 
 	}	 

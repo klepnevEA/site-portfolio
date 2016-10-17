@@ -12,7 +12,7 @@
 
 .nav__list_li_link {
     color: $color_grey;
-    @include fira('medium');
+    @include fira('regular');
     font-size: 18px;
     padding-right: 24px;
     line-height: 2.45em;
@@ -29,7 +29,10 @@
     &.active {
         border-right: 6px solid $color_blue;
         
-        a {color: $color_blue;}
+        a {
+            color: $color_blue;
+            @include fira('medium');
+        }
     }  
 
     &:hover a {color: $color_blue;}       
